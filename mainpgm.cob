@@ -6,8 +6,9 @@
            FILE SECTION.
            
            WORKING-STORAGE SECTION.
-           01 WS-VAR1 PIC 9(4) VALUE 0.
-           01 WS-VAR2 PIC 9(4) VALUE 0.
+           01 ARGS.
+               02 WS-VAR1 PIC 9(4) VALUE 12.
+               02 WS-VAR2 PIC 9(4) VALUE 22.
            01 WS-RESULT PIC 9(4) VALUE 0.
            01 WS-TEXT1 PIC A(10) VALUE 'Hello'.
            01 WS-TEXT2 PIC A(10) VALUE 'World'.
@@ -66,9 +67,12 @@
                DISPLAY 'Computed result: ' WS-RESULT.
            
       * CALL Statement
-               CALL 'another' USING WS-VAR1 WS-VAR2.
+               MOVE 10 TO WS-VAR1
+               MOVE 20 TO WS-VAR2
+               CALL 'other' USING ARGS.
            
       * Using ACCEPT
+               DISPLAY "Time to write a number (1-9999): "
                ACCEPT WS-VAR1 FROM CONSOLE.
                DISPLAY 'You entered: ' WS-VAR1.
            

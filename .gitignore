@@ -1,0 +1,6 @@
+*.dynlib
+# Ignorera exekverbara filer utan ändelse
+*
+!*/
+!*.*
+
