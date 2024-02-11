@@ -22,7 +22,7 @@ cobc -m -o other other.cob
 
 #### Compile main module
 ```
-cobc -x -o cobol cobol.cob
+cobc -x -o mainpgm mainpgm.cob
 ```
 
 ## Run
