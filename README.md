@@ -15,7 +15,7 @@ Brew install cobc
 export COB_LIBRARY_PATH=/Users/[USER-NAME]/cobolfiles
 ```
 
-#### Compile module with dynamic linkage (dynlib)
+#### Compile module with dynamic linkage (dylib)
 ```
 cobc -m -o other other.cob
 ```

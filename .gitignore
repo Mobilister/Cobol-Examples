@@ -1,4 +1,4 @@
-*.dynlib
+*.dylib
 # Ignorera exekverbara filer utan ändelse
 *
 !*/
